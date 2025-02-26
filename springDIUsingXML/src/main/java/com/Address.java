@@ -20,6 +20,7 @@ public class Address {
 		this.state = state;
 	}
 
+// toString method is object display in string format. 
 	@Override
 	public String toString() {
 		return "Address [city=" + city + ", state=" + state + "]";
