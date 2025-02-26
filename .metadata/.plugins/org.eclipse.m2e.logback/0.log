@@ -143,3 +143,21 @@
 2025-02-26 22:31:41,206 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
 2025-02-26 22:32:03,098 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2025-02-26 22:32:03,103 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-02-26 22:32:37,550 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-26 22:32:37,558 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-02-26 22:32:47,163 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-26 22:32:47,168 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-02-26 22:38:30,648 [Worker-51: Creating project "SpringDIUsingAnnotations"] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: springFrameworkProjects:SpringDIUsingAnnotations:0.0.1-SNAPSHOT @ C:\Caltech course-Simplilearn\Spring Framework Practices\SpringDIUsingAnnotations\pom.xml.
+2025-02-26 22:38:31,524 [Worker-51: Creating project "SpringDIUsingAnnotations"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringDIUsingAnnotations/src/main/java
+2025-02-26 22:38:31,527 [Worker-51: Creating project "SpringDIUsingAnnotations"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringDIUsingAnnotations/src/main/resources
+2025-02-26 22:38:31,529 [Worker-51: Creating project "SpringDIUsingAnnotations"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringDIUsingAnnotations/src/test/java
+2025-02-26 22:38:31,530 [Worker-51: Creating project "SpringDIUsingAnnotations"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringDIUsingAnnotations/src/test/resources
+2025-02-26 22:38:32,042 [Worker-51: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-02-26 22:38:32,045 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-26 22:38:32,049 [Worker-51: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-02-26 22:38:32,051 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-02-26 22:39:29,313 [Worker-52: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: springFrameworkProjects:SpringDIUsingAnnotations:0.0.1-SNAPSHOT @ C:\Caltech course-Simplilearn\Spring Framework Practices\SpringDIUsingAnnotations\pom.xml.
+2025-02-26 22:39:29,424 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-26 22:39:29,430 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-02-26 22:39:30,553 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-26 22:39:30,556 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
