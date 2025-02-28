@@ -11,13 +11,13 @@ public class DemoTest {
 
 	public static void main(String[] args) {
 
-		// load the xml file as well as get the reference of ApplicationContext
+		// load the xml file and get the reference of ApplicationContext
 		ApplicationContext ac = new ClassPathXmlApplicationContext("beans.xml");
 		Address add = (Address) ac.getBean("address");
 		System.out.println(add.toString());// default value of city and state
 		add.setCity("San Diego");
 		add.setState("California");
-		System.out.println(add); // by default it call toString method
+		System.out.println(add); // by default it calls toString method
 		Employee emp = (Employee) ac.getBean("employee");
 		System.out.println(emp);
 		emp.setId(100);
