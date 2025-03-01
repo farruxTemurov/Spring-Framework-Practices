@@ -58,7 +58,7 @@ public class EmployeeDao {
 		}
 	}
 
-	public List<Employee> findAllEmployee() {
+	public List<Employee> findAllEmployees() {
 		List<Employee> listofEmp = new ArrayList<Employee>();
 		try {
 			Connection con = ds.getConnection();
