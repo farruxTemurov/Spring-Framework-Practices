@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,6 +45,16 @@ public class EmployeeDao {
 		} catch (Exception e) {
 			System.err.println(e.toString());
 			return 0;
+		}
+	}
+
+	public List<Map<String, Object>> retrieveEmployeeAsMap() {
+		try {
+			// converted each record as map object.
+			return jdbcTemplate.queryForList("select * from employees");
+		} catch (Exception e) {
+			System.err.println(e.toString());
+			return null;
 		}
 	}
 

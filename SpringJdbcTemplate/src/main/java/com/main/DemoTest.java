@@ -1,6 +1,8 @@
 package com.main;
 
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -69,18 +71,14 @@ public class DemoTest {
 				System.out.println(updateMessage);
 				break;
 
-//			case 4: // View All Employees
-//				List<Employee> employees = es.viewAllEmployees(); // Call service method
-//				if (employees.isEmpty()) {
-//					System.out.println("No employees found.");
-//				} else {
-//					System.out.println("=== Employee List ===");
-//					for (Employee emp : employees) {
-//						System.out.println(
-//								"ID: " + emp.getId() + ", Name: " + emp.getName() + ", Salary: " + emp.getSalary());
-//					}
-//				}
-//				break;
+			case 4: // View All Employees
+				List<Map<String, Object>> employeeMaps = es.getEmployeeAsMap();
+				Iterator<Map<String, Object>> li = employeeMaps.iterator();
+				while (li.hasNext()) {
+					Map<String, Object> mm = li.next();
+					System.out.println(mm.get("id") + " " + mm.get("name") + " " + mm.get("salary"));
+				}
+				break;
 
 			case 5: // Exit
 				System.out.println("Exiting program...");
