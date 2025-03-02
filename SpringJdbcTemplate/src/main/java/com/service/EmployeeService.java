@@ -21,7 +21,7 @@ public class EmployeeService {
 		} else if (employeeDao.storeEmployee(employee) > 0) {
 			return "Employee record stored successfully";
 		} else {
-			return "Employee record dint' store";
+			return "Employee record wasn't stored";
 		}
 	}
 
@@ -43,8 +43,8 @@ public class EmployeeService {
 		}
 	}
 
-	public List<Employee> viewAllEmployees() {
-		return employeeDao.findAllEmployees(); // Fetch all employees from DAO
-	}
+//	public List<Employee> viewAllEmployees() {
+//		return employeeDao.findAllEmployees(); // Fetch all employees from DAO
+//	}
 
 }

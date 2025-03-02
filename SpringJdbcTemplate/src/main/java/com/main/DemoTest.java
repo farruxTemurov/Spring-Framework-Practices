@@ -69,18 +69,18 @@ public class DemoTest {
 				System.out.println(updateMessage);
 				break;
 
-			case 4: // View All Employees
-				List<Employee> employees = es.viewAllEmployees(); // Call service method
-				if (employees.isEmpty()) {
-					System.out.println("No employees found.");
-				} else {
-					System.out.println("=== Employee List ===");
-					for (Employee emp : employees) {
-						System.out.println(
-								"ID: " + emp.getId() + ", Name: " + emp.getName() + ", Salary: " + emp.getSalary());
-					}
-				}
-				break;
+//			case 4: // View All Employees
+//				List<Employee> employees = es.viewAllEmployees(); // Call service method
+//				if (employees.isEmpty()) {
+//					System.out.println("No employees found.");
+//				} else {
+//					System.out.println("=== Employee List ===");
+//					for (Employee emp : employees) {
+//						System.out.println(
+//								"ID: " + emp.getId() + ", Name: " + emp.getName() + ", Salary: " + emp.getSalary());
+//					}
+//				}
+//				break;
 
 			case 5: // Exit
 				System.out.println("Exiting program...");
