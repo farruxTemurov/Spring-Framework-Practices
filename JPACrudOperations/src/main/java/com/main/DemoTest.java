@@ -27,5 +27,32 @@ public class DemoTest {
 			result = es.storeEmployee(emp);
 			System.out.println(result);
 		}
+		if (choice == 2) {
+			System.out.println("Enter the id");
+			int id = sc.nextInt();
+			result = es.deleteEmployee(id);
+			System.out.println(result);
+		}
+
+		if (choice == 3) {
+			System.out.println("Enter the id");
+			int id = sc.nextInt();
+
+			System.out.println("Enter the salary");
+			float salary = sc.nextFloat();
+			Employee emp = new Employee();
+			emp.setId(id);
+
+			emp.setSalary(salary);
+			result = es.updateEmployee(emp);
+			System.out.println(result);
+		}
+		if (choice == 4) {
+			System.out.println("Enter the id");
+			int id = sc.nextInt();
+			Employee emp = es.findEmployee(id);
+			System.out.println(emp);
+		}
 	}
+
 }
