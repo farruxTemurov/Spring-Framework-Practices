@@ -17,30 +17,40 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.13.0</version>
+				<version>3.8.1</version>
 				<configuration>
-					<release>22</release>
+					<release>17</release>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+
 	<dependencies>
+
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.16</version>
 		</dependency>
-		<dependency>
 
+		<dependency>
 			<groupId>org.eclipse.persistence</groupId>
 			<artifactId>javax.persistence</artifactId>
 			<version>2.1.0</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>5.5.4.Final</version>
+		</dependency>
+		<dependency>
+
+			<groupId>javassist</groupId>
+
+			<artifactId>javassist</artifactId>
+
+			<version>3.12.1.GA</version>
+
 		</dependency>
 
 	</dependencies>
