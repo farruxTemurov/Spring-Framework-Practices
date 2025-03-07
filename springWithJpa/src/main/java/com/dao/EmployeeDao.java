@@ -1,8 +1,11 @@
 package com.dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
+import javax.persistence.Query;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -15,6 +18,7 @@ public class EmployeeDao {
 	@Autowired
 	EntityManagerFactory emf;
 
+	// Store Employee
 	public int storeEmployee(Employee employee) {
 		try {
 			EntityManager manager = emf.createEntityManager();
@@ -59,5 +63,58 @@ public class EmployeeDao {
 			tran.commit();
 			return 1;
 		}
+	}
+
+	// find Employee using id
+	public Employee findEmployee(int id) {
+		EntityManager manager = emf.createEntityManager();
+		Employee emp = manager.find(Employee.class, id);
+		return emp;
+	}
+
+	// find All record using JPQL language
+	public List<Employee> findAllEmployees() {
+		EntityManager manager = emf.createEntityManager();
+		Query qry = manager.createQuery("select e from Employee e");
+		List<Employee> listOfEmp = qry.getResultList();
+		return listOfEmp;
+	}
+
+	// find record with conditions.
+	public List<Employee> findEmployeeWithSalaryCondition(float salary) {
+		EntityManager manager = emf.createEntityManager();
+		// label query which is use to set the dynamic value
+		Query qry = manager.createQuery("select e from Employee e where e.salary > :esalary");
+		// esalary is label name
+		qry.setParameter("esalary", salary);
+		List<Employee> listOfEmp = qry.getResultList();
+		return listOfEmp;
+	}
+
+	// retrieve only name of all employees using JPQL
+	public List<String> findAllEmployeeNames() {
+		EntityManager manager = emf.createEntityManager();
+		// retrieve partial object ie only one property
+		Query qry = manager.createQuery("select e.name from Employee e");
+		List<String> names = qry.getResultList();
+		return names;
+	}
+
+	// retrieve only salary of all employees using JPQL
+	public List<Float> findAllEmployeeSalary() {
+		EntityManager manager = emf.createEntityManager();
+		// retrieve partial object ie only one property
+		Query qry = manager.createQuery("select e.salary from Employee e");
+		List<Float> salary = qry.getResultList();
+		return salary;
+	}
+
+	// retrieve only salary of all employees using JPQL
+	public List<Object[]> findAllEmployeeNameAndSalary() {
+		EntityManager manager = emf.createEntityManager();
+		// retrieve more than one we need to do type casting object array
+		Query qry = manager.createQuery("select e.name,e.salary from Employee e");
+		List<Object[]> nameAndSalary = qry.getResultList();
+		return nameAndSalary;
 	}
 }
