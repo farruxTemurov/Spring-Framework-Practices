@@ -15,13 +15,24 @@ public class DemoTest {
 		EmployeeService es = (EmployeeService) ac.getBean("employeeService");
 
 		// store Employee
-		Employee employee1 = (Employee) ac.getBean("employee");
+//		Employee employee1 = (Employee) ac.getBean("employee");
 //		Employee employee1 = Context.getBean(Employee.class);
-		employee1.setId(105);
-		employee1.setName("Traverse");
-		employee1.setSalary(50000);
-		String result = es.storeEmployee(employee1);
-		System.out.println(result);
+//		employee1.setId(105);
+//		employee1.setName("Traverse");
+//		employee1.setSalary(50000);
+//		String result = es.storeEmployee(employee1);
+//		System.out.println(result);
+
+		// Delete employee
+//		String result = es.deleteEmployee(101);
+//		System.out.println(result);
+
+//		// Update Employee 
+//		Employee employee1 = (Employee)ac.getBean("employee");
+//		employee1.setId(102);
+//		employee1.setSalary(25000);
+//		String result = es.updateEmployeeSalary(employee1);
+//		System.out.println(result);
 	}
 
 }
