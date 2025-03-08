@@ -18,7 +18,15 @@ public class TrainerService {
 		if (trainerDao.storeTrainer(trainer) > 0) {
 			return "Trainer details stored";
 		} else {
-			return "Trainer wasn't stored";
+			return "Trainer didn't store";
 		}
+	}
+
+	public List<Trainer> findAllTrainer() {
+		return trainerDao.findAllTrainer();
+	}
+
+	public List<Object[]> findTrainerAndStudentUsingJoin() {
+		return trainerDao.findTrainerAndStudentJoin();
 	}
 }
