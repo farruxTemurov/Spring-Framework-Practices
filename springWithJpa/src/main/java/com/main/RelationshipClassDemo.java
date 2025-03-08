@@ -20,19 +20,19 @@ public class RelationshipClassDemo {
 
 		// store trainer details
 
-		// Trainer t1 = (Trainer)ac.getBean("trainer");
-		// t1.setTid(3);
-		// t1.setTname("Lex");
-		// t1.setTech("AI");
-		// String result = ts.storeTrainer(t1);
-		// System.out.println(result);
+//		 Trainer t1 = (Trainer)ac.getBean("trainer");
+//		 t1.setTid(2);
+//		 t1.setTname("Jaafar");
+//		 t1.setTech("Python");
+//		 String result = ts.storeTrainer(t1);
+//		 System.out.println(result);
 
 		// store student details
 		 Student s1 = (Student)ac.getBean("student");
-		 s1.setSid(103);
-		 s1.setSname("David");
-		 s1.setAge(27);
-		 s1.setTid(3);
+		 s1.setSid(101);
+		 s1.setSname("Greg");
+		 s1.setAge(19);
+		 s1.setTid(2);
 		 String result = ss.storeStudent(s1);
 		 System.out.println(result);
 
