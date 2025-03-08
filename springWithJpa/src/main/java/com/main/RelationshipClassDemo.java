@@ -7,7 +7,7 @@ import com.bean.Trainer;
 import com.service.StudentService;
 import com.service.TrainerService;
 
-public class RelationshipsClassDemo {
+public class RelationshipClassDemo {
 	public static void main(String[] args) {
 		ApplicationContext ac = new ClassPathXmlApplicationContext("beans.xml");
 

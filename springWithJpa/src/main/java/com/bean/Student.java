@@ -2,8 +2,15 @@ package com.bean;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
 @Entity
+@Component
+@Scope("prototype")
+@Table(name = "student")
 public class Student {
 	@Id
 	private int sid;
