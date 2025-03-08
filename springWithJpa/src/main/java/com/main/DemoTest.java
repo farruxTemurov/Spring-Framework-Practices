@@ -66,11 +66,11 @@ public class DemoTest {
 //	}
 //
 //		// find All employee name and salary
-//		List<Object[]> namesAndSalary = es.findNameAndSalary();
-//		for (Object obj[] : namesAndSalary) {
-//			System.out.println("name " + obj[0] + " salary " + obj[1]);
-//		}
-//
+		List<Object[]> namesAndSalary = es.findNameAndSalary();
+		for (Object obj[] : namesAndSalary) {
+			System.out.println("name " + obj[0] + " salary " + obj[1]);
+		}
+
 	}
 
 }
