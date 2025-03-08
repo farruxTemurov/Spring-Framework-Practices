@@ -2,6 +2,7 @@ package com.bean;
 
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -10,8 +11,11 @@ import javax.persistence.OneToMany;
 @Entity
 public class Trainer {
 	@Id
+	@Column(name = "tid")
 	private int tid;
+	@Column(name = "tname")
 	private String tname;
+	@Column(name = "tech")
 	private String tech;
 	@OneToMany
 	@JoinColumn(name = "tid") // Link to Fk in student's table
