@@ -7,8 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>Welcome to Spring MVC App!</h2>
-	<a href="hello">Click Here</a>
-	<a href="hi">HI</a>
+	<h2>Welcome to Servlet using Spring MVC with SayHi path!</h2>
 </body>
 </html>
