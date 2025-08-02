@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-@Controller // controller specific annotation provide Servlet features
+@Controller //controller-specific annotation provides Servlet features
 public class LoginController {
 
 	// like a doPost method
@@ -17,7 +17,7 @@ public class LoginController {
 		String emailid = request.getParameter("email");
 		String password = request.getParameter("password");
 		// check emailid and password
-		// we can check by hard coding or using jdbc or using jdbcTemplate or Jpa etc
+		// we can check by hard-coding or using jdbc or using jdbcTemplate or Jpa etc
 		ModelAndView mav = new ModelAndView();
 		if (emailid.equals("akash@gmail.com") && password.equals("123")) {
 			mav.addObject("user", "user@gmail.com"); // equal to request.setAttribute("user","user@gmail.com");
