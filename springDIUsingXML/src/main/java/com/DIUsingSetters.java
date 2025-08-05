@@ -13,7 +13,7 @@ public class DIUsingSetters {
 		BeanFactory factory = new XmlBeanFactory(res);
 		Employee employee1 = (Employee) factory.getBean("emp3"); // parameter constructor
 		employee1.displayEmployee();
-		Employee employee2 = (Employee) factory.getBean("emp4"); // it call empty constructor and using property tag
+		Employee employee2 = (Employee) factory.getBean("emp4"); // it calls empty constructor and using property tag
 																	// override the values
 
 		employee2.displayEmployee();
