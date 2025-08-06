@@ -72,7 +72,7 @@ public class EmployeeDao {
 		return emp;
 	}
 
-	// find All record using JPQL language
+	// find All records using JPQL language
 	public List<Employee> findAllEmployees() {
 		EntityManager manager = emf.createEntityManager();
 		Query qry = manager.createQuery("select e from Employee e");
@@ -83,7 +83,7 @@ public class EmployeeDao {
 	// find record with conditions.
 	public List<Employee> findEmployeeWithSalaryCondition(float salary) {
 		EntityManager manager = emf.createEntityManager();
-		// label query which is use to set the dynamic value
+		// label query, which is used to set the dynamic value
 		Query qry = manager.createQuery("select e from Employee e where e.salary > :esalary");
 		// esalary is label name
 		qry.setParameter("esalary", salary);
@@ -91,16 +91,16 @@ public class EmployeeDao {
 		return listOfEmp;
 	}
 
-	// retrieve only name of all employees using JPQL
+	// retrieve only names of all employees using JPQL
 	public List<String> findAllEmployeeNames() {
 		EntityManager manager = emf.createEntityManager();
-		// retrieve partial object ie only one property
+		// retrieve partial object, ie only one property
 		Query qry = manager.createQuery("select e.name from Employee e");
 		List<String> names = qry.getResultList();
 		return names;
 	}
 
-	// retrieve only salary of all employees using JPQL
+	// retrieve only the salary of all employees using JPQL
 	public List<Float> findAllEmployeeSalary() {
 		EntityManager manager = emf.createEntityManager();
 		// retrieve partial object ie only one property
@@ -109,10 +109,10 @@ public class EmployeeDao {
 		return salary;
 	}
 
-	// retrieve only salary of all employees using JPQL
+	// retrieve only the salary of all employees using JPQL
 	public List<Object[]> findAllEmployeeNameAndSalary() {
 		EntityManager manager = emf.createEntityManager();
-		// retrieve more than one we need to do type casting object array
+		// retrieve more than one, we need to do type casting object array
 		Query qry = manager.createQuery("select e.name,e.salary from Employee e");
 		List<Object[]> nameAndSalary = qry.getResultList();
 		return nameAndSalary;
