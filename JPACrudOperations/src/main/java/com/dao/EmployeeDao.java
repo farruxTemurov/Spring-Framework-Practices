@@ -10,11 +10,11 @@ import com.bean.Employee;
 public class EmployeeDao {
 
 	public int storeEmployee(Employee employee) {
-		// it load persitene.xml file and get database as well as entity class details
+		// it loads persitene.xml file and gets database as well as entity class details
 		// using persistence unit name
 
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("JpaDemo"); // like a Connection
-		// it is like a PreparedStatement which contains set of method
+		// it is like a PreparedStatement which contains a set of methods
 		// which help to do operation on entity
 		EntityManager manager = emf.createEntityManager(); // like a PreparedStatement
 
