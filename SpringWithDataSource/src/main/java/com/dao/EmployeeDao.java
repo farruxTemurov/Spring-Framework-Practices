@@ -15,8 +15,8 @@ import com.bean.Employee;
 public class EmployeeDao {
 
 	@Autowired
-	DataSource ds; // it search database connection in beans.xml file
-	// if present it do DI for that data source. by default it consider as byType.
+	DataSource ds; // it searches the database connection in beans.xml file
+	// if present, it does DI for that data source. By default, it is considered as byType.
 
 	public int storeEmployee(Employee employee) {
 		try {
