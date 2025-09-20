@@ -41,7 +41,7 @@ public class DemoTest {
 //		System.out.println(emp.toString());
 //	}
 
-		// retrieve All Employee using JPQL
+		// retrieve All employees using JPQL
 //	List<Employee> listOfEmployee = es.findAllEmployees();
 //	for(Employee emp:listOfEmployee) {
 //		System.out.println(emp);
@@ -59,13 +59,13 @@ public class DemoTest {
 //		System.out.println(name);
 //	}
 
-		// find all Employee salary
+		// find all Employee salaries
 //	List<Float> salaries = es.findAllEmployeeSalary();
 //	for(float salary : salaries) {
 //		System.out.println(salary);
 //	}
 //
-//		// find All employee name and salary
+//		//Find all employee names and salaries
 		List<Object[]> namesAndSalary = es.findNameAndSalary();
 		for (Object obj[] : namesAndSalary) {
 			System.out.println("name " + obj[0] + " salary " + obj[1]);
