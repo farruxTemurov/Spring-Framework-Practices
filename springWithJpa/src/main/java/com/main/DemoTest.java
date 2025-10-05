@@ -14,7 +14,7 @@ public class DemoTest {
 		ApplicationContext ac = new ClassPathXmlApplicationContext("beans.xml");
 		EmployeeService es = (EmployeeService) ac.getBean("employeeService");
 
-		// store Employee
+		// storing Employee
 //	Employee employee1 = (Employee)ac.getBean("employee");
 //	employee1.setId(104);
 //	employee1.setName("John");
