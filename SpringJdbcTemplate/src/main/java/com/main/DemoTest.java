@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.bean.Employee;
 import com.service.EmployeeService;
-import com.dao.EmployeeDao; // Importing DAO for find, update, delete methods
+import com.dao.EmployeeDao; // Importing DAO for find, update, and delete methods
 
 public class DemoTest {
 
