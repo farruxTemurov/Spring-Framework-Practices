@@ -8,7 +8,6 @@ import org.springframework.core.io.Resource;
 public class DIForAddressUsingSetters {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		// load the xml file
 		Resource res = new ClassPathResource("beans.xml");
 		// BeanFactory object created
