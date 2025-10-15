@@ -12,7 +12,7 @@ public class PureAnnotationBasedDI {
 		System.out.println(add.toString());// default value of city and state
 		add.setCity("San Diego");
 		add.setState("California");
-		System.out.println(add); // by default it calls toString method
+		System.out.println(add); // by default, it calls toString method
 		Employee emp = (Employee) ac.getBean("employee");
 		System.out.println(emp);
 		emp.setId(100);
