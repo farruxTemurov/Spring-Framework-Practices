@@ -11,7 +11,7 @@ public class EmployeeService {
 		if (ed.storeEmployee(employee) > 0) {
 			return "Employee record stored";
 		} else {
-			return "Employee record wasn't store";
+			return "Employee record wasn't stored";
 		}
 	}
 
